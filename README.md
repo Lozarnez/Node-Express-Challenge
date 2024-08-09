@@ -1,17 +1,17 @@
-# Assessing Node - Express Fu
-* Answers to your written questions will be recorded in *Answers.md* 
-* **Just a friendly Reminder** Don't fret or get anxious about this, this is a no-pressure assessment that is only going to help guide you here in the near future. This is NOT a pass/fail situation. 
+# Evaluando Node - Express - API
+* Las respuestas a tus preguntas escritas se registrarán en *Answers.md* 
+* **Solo un recordatorio amistoso:** No te preocupes ni te pongas ansioso por esto, es una evaluación sin presión que solo te ayudará en un futuro cercano. Esto NO es una situación de aprobado/reprobado.
 
-## Questions
-1. What is Node?
-2. What is Express?
-3. What is Middleware?
-4. What is an endpoint?
+## Preguntas
+1. ¿Qué es Node?
+2. ¿Qué es Express?
+3. ¿Qué es Middleware?
+4. ¿Qué es un endpoint?
 
-## Challenge
+## Desafío
 
 https://www.coindesk.com/api/
 
-You're going to create a server using Node and Express. This server is going to have the endpoint **/compare** and will return the amount that bitcoin's value in USD has either risen or fallen between the current day and the previous. You will get this data by using the provided api. Make two separate requests, one for the previous value and one for the current.
+Vas a crear un servidor utilizando Node y Express. Este servidor tendrá el endpoint **/compare** y devolverá la cantidad que el valor de bitcoin en USD ha subido o bajado entre el día actual y el anterior. Obtendrás estos datos utilizando la API proporcionada. Realiza dos solicitudes separadas, una para el valor anterior y otra para el actual.
 
-Good luck, and have fun!
+¡Buena suerte y diviértete!
