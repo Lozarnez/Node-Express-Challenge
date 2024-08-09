@@ -3,6 +3,7 @@ const bodyParser = require('body-parser');
 const fetch = require('node-fetch');
 
 const config = require('../config.js');
+const { answer } = require('./answer.js');
 
 const app = express()
 const PORT = config.port
@@ -21,22 +22,7 @@ function get(url) {
   })
 }
 
-app.get('/current', (req, res) => {
-  Promise.all([
-    get(currentBTC),
-    get(prevBTC)
-  ]).then(([current, prev]) => {
-    const currentDayPrice = current.bpi.USD.rate_float;
-    const previousDayPrice = Object.values(prev.bpi)[0];
-    const priceDifference = currentDayPrice - previousDayPrice;
-    res.send({
-      priceDifference,
-      currentDayPrice,
-      previousDayPrice
-
-    })
-  })
-})
+app.get('/compare', answer);
 
 app.listen(PORT, err => {
   if (err) {
